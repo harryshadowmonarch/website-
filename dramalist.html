@@ -1,0 +1,347 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DramaFlix</title>
+    <link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+    <header>
+        <div class="logo">DramaFlix</div>
+
+        <label for="nav-toggle" class="nav-toggle" aria-label="Toggle navigation">&#9776;</label>
+
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="dramalist.html">Drama-List</a></li>
+                <li><a href="reviews.html">Reviews</a></li>
+                <li><a href="Recent.html">Recent</a></li>
+                <li><a href="signup.html">Sign Up</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section class="hero">
+            <div class="hero-content">
+                <div class="search-bar">
+                    <input type="text" id="search-input" placeholder="Search for dramas..." />
+                    <button id="search-button"><i class="fas fa-search"></i></button>
+                </div>
+                <h1> Asian Dramas List</h1>
+                <br>
+                <a href="#drama-list" class="cta-button">Explore Now</a>
+            </div>
+        </section>
+        <section class="featured-dramas">
+            <div class="filter">
+                <label for="genre-filter">Filter by Genre:</label>
+                <select id="genre-filter">
+                    <option value="all">All</option>
+                    <option value="Action">Action</option>
+                    <option value="Romance">Romance</option>
+                    <option value="Comedy">Comedy</option>
+                    <option value="Drama">Drama</option>
+                    <option value="Thriller">Thriller</option>
+                    <option value="Fantasy">Fantasy</option>
+                    <option value="Mystery">Mystery</option>
+                </select>
+            </div>
+            
+            <section class="movie-list">
+                <h2>Popular Dramas</h2>
+                <div class="movies">
+                    <ul>
+                        <li><a href="goblin.html">Goblin (2016)</a></li>
+                        <li><a href="crash_landing_on_you.html">Crash Landing on You (2019)</a></li>
+                        <li><a href="a_business_proposal.html">A Business Proposal (2022)</a></li>
+                        <li><a href="itaewon_class.html">Itaewon Class (2020)</a></li>
+                        <li><a href="hotel_del_luna.html">Hotel Del Luna (2019)</a></li>
+                        <li><a href="my_name.html">My Name (2021)</a></li>
+                        <li><a href="vincenzo.html">Vincenzo (2021)</a></li>
+                        <li><a href="the_king_eternal_monarch.html">The King: Eternal Monarch (2020)</a></li>
+                        <li><a href="true_beauty.html">True Beauty (2020-2021)</a></li>
+                        <li><a href="extraordinary_you.html">Extraordinary You (2019)</a></li>
+                        <li><a href="love_alarm.html">Love Alarm (2019)</a></li>
+                        <li><a href="sky_castle.html">Sky Castle (2018-2019)</a></li>
+                        <li><a href="navillera.html">Navillera (2021)</a></li>
+                        <li><a href="pachinko.html">Pachinko (2022)</a></li>
+                        <li><a href="our_blues.html">Our Blues (2022)</a></li>
+                        <li><a href="the_glory.html">The Glory (2022)</a></li>
+                        <li><a href="weightlifting_fairy_kim_bok_joo.html">Weightlifting Fairy Kim Bok-joo (2016-2017)</a></li>
+                        <li><a href="reply_1988.html">Reply 1988 (2015)</a></li>
+                        <li><a href="jirisan.html">Jirisan (2021)</a></li>
+                        <li><a href="the_uncanny_counter.html">The Uncanny Counter (2020)</a></li>
+                        <li><a href="sweet_home.html">Sweet Home (2020)</a></li>
+                        <li><a href="destined_with_you.html">Destined With You (2023)</a></li>
+                        <li><a href="my_demon.html">My Demon (2023)</a></li>
+                        <li><a href="yumis_cells.html">Yumi's Cells (2021)</a></li>
+                        <li><a href="whats_wrong_with_secretary_kim.html">What’s Wrong with Secretary Kim? (2018)</a></li>
+                        <li><a href="the_tale_of_nokdu.html">The Tale of Nokdu (2019)</a></li>
+                        <li><a href="the_world_of_the_married.html">The World of the Married (2020)</a></li>
+                        <li><a href="the_devil_judge.html">The Devil Judge (2021)</a></li>
+                        <li><a href="dp.html">D.P. (2021)</a></li>
+                        <li><a href="the_silent_sea.html ">The Silent Sea (2021)</a></li>
+                        <li><a href="racket_boys.html">Racket Boys (2021)</a></li>
+                        <li><a href="hometown_cha_cha_cha.html">Hometown Cha-Cha-Cha (2021)</a></li>
+                        <li><a href="the_red_sleeve.html">The Red Sleeve (2021)</a></li>
+                        <li><a href="love_in_contract.html">Love in Contract (2022)</a></li>
+                        <li><a href="the_sound_of_magic.html">The Sound of Magic (2022)</a></li>
+                        <li><a href="business_proposal.html">Business Proposal (2022)</a></li>
+                        <li><a href="the_good_detective.html">The Good Detective (2020)</a></li>
+                        <li><a href="the_lady_in_dignity.html">The Lady in Dignity (2017)</a></li>
+                        <li><a href="the_great_shaman_ga_doo_shim.html">The Great Shaman Ga Doo-shim (2021)</a></li>
+                        <li><a href="the_school_nurse_files.html">The School Nurse Files (2020)</a></li>
+                        <li><a href="the_witchs_diner.html">The Witch's Diner (2021)</a></li>
+                        <li><a href="the_secret_life_of_my_secretary.html">The Secret Life of My Secretary (2019)</a></li>
+                        <li><a href="the_heirs.html">The Heirs (2013)</a></li>
+                        <li><a href="the_bride_of_habaek.html">The Bride of Habaek (2017)</a></li>
+                    </ul>
+                </div>
+            </section>
+            <main>
+                <section class="alphabetical-navigation">
+                    <h1>Asian Drama List (A-Z)</h1>
+                    <div class="tabs">
+                        <button class="tab" data-category="korean">Korean Dramas</button>
+                        <button class="tab" data-category="japanese">Japanese Dramas</button>
+                    </div>
+                    <div class="alphabet">
+                        <a href="#">#</a>
+                        <a href="#">A</a>
+                        <a href="#">B</a>
+                        <a href="#">C</a>
+                        <a href="#">D</a>
+                        <a href="#">E</a>
+                        <a href="#">F</a>
+                        <a href="#">G</a>
+                        <a href="#">H</a>
+                        <a href="#">I</a>
+                        <a href="#">J</a>
+                        <a href="#">K</a>
+                        <a href="#">L</a>
+                        <a href="#">M</a>
+                        <a href="#">N</a>
+                        <a href="#">O</a>
+                        <a href="#">P</a>
+                        <a href="#">Q</a>
+                        <a href="#">R</a>
+                        <a href="#">S</a>
+                        <a href="#">T</a>
+                        <a href="#">U</a>
+                        <a href="#">V</a>
+                        <a href="#">W</a>
+                        <a href="#">X</a>
+                        <a href="#">Y</a>
+                        <a href="#">Z</a>
+                    </div>
+                </section>
+
+                <section class="movie-list">
+                    <h2>Korean Drama</h2>
+                    <div class="movies">
+                        <div>
+                            <h3>&</h3>
+                            <ul>
+                                <li><a href="a_barefoot_dream.html">100 Days My Prince</a></li>
+                                <li><a href="a_barefoot_dream.html">100% Era (2021)</a></li>
+                                <li><a href="a_barefoot_dream.html">101 st Proposal</a></li>
+                                <li><a href="a_barefoot_dream.html">12 Nights</a></li>
+                                <li><a href="a_barefoot_dream.html">18 Again (2020)</a></li>
+                                <li><a href="a_barefoot_dream.html"> 18 vs 29</a></li>
+                                <li><a href="a_barefoot_dream.html">20+1 (2019)</a></li>
+                                <li><a href="a_barefoot_dream.html">20th Century Boy and Girl</a></li>
+                                <li><a href="a_barefoot_dream.html">28 Faces of the Moon</a></li>
+                                <li><a href="a_barefoot_dream.html">300 Year-Old Class of 2020 (2020)</a></li>
+                                <li><a href="a_barefoot_dream.html">365: Repeat the Year</a></li>
+                                <li><a href="a_barefoot_dream.html">49 Days</a></li>
+                            </ul>
+                        </div>
+                        <div>
+                            <h3>A</h3>
+                            <ul>
+                                <li><a href="a_barefoot_dream.html">A Barefoot Dream</a></li>
+                                <li><a href="a_beauty_of_revenge.html">A Beauty of Revenge (2021)</a></li>
+                                <li><a href="a_better_tomorrow.html">A Better Tomorrow (2014)</a></li>
+                                <li><a href="a_bittersweet_life.html">A Bittersweet Life DirCut</a></li>
+                                <li><a href="a_bloody_lucky_day.html">A Bloody Lucky Day (2023)</a></li>
+                                <li><a href="a_breeze_of_love.html">A Breeze of Love (2023)</a></li>
+                                <li><a href="a_business_proposal.html">A Business Proposal (2022)</a></li>
+                                <li><a href="a_company_man.html">A Company Man</a></li>
+                                <li><a href="a_deadbeats_meal.html">A DeadbEAT’s Meal (2021)</a></li>
+                                <li><a href="a_double_table.html">A Double Table (2021)</a></li>
+                                <li><a href="a_faraway_nation.html">A Faraway Nation</a></li>
+                                <li><a href="a_gentleman_and_a_young_lady.html">A Gentleman and a Young Lady (2021)</a></li>
+                                <li><a href="a_gentlemans_dignity.html">A Gentleman's Dignity</a></li>
+                                <li><a href="a_ghost_i_know.html">A Ghost I Know (2019)</a></li>
+                                <li><a href="a_good_day_for_the_wind_to_blow.html">A Good Day For The Wind To Blow</a></li>
+                                <li><a href="a_good_day_to_be_a_dog.html">A Good Day to Be a Dog (2023)</a></li>
+                                <li><a href="a_good_supper.html">A Good Supper (2021)</a></li>
+                                <li><a href="a_hard_day.html">A Hard Day (2013)</a></li>
+                                <li><a href="a_killer_paradox.html">A Killer Paradox (2024)</a></li>
+                                <li><a href="a_korean_odyssey.html">A Korean Odyssey</a></li>
+                                <li><a href="a_little_love_never_hurts.html">A Little Love Never Hurts</a></li>
+                                <li><a href="a_love_so_beautiful.html">A Love So Beautiful (2020)</a></li>
+                                <li><a href="a_love_to_kill.html">A Love to Kill</a></li>
+                                <li><a href="a_man_called_god.html">A Man Called God</a></li>
+                                <li><a href="a_mans_story.html">A Man's Story</a></li>
+                                <li><a href="a_new_leaf.html">A New Leaf</a></li>
+                                <li><a href="a_perfect_match.html">A Perfect Match</a></li>
+                                <li><a href="a_person_you_could_know.html">A Person You Could Know</a></li>
+                                <li><a href="a_piece_of_your_mind.html">A Piece of Your Mind </a></li>
+                                <li><a href="a_place_in_the_sun.html">A Place in the Sun</a></li>
+                                <li><a href="a_poem_a_day.html">A Poem a Day</a></li>
+                                <li><a href="a_promise_with_the_gods.html">A Promise with the Gods</a></li>
+                                <li><a href="a_reason_to_live.html">A Reason to Live</a></li>
+                                <li><a href="a_secret_house.html">A Secret House (2022)</a></li>
+                                <li><a href="a_shop_for_killers.html">A Shop for Killers (2024)</a></li>
+                                <li><a href="a_shoulder_to_cry_on.html">A Shoulder to Cry On (2023)</a></li>
+                                <li><a href="a_song_for_you_3.html">A Song For You 3</a></li>
+                                <li><a href="a_superior_day.html">A Superior Day (2022)</a></li>
+                                <li><a href="a_tale_of_two_sisters.html">A Tale of Two Sisters</a></li>
+                                <li><a href="a_thousand_days_promise.html">A Thousand Days Promise</a></li>
+                                <li><a href="a_thousand_kisses.html">A Thousand Kisses</a></li>
+                                <li><a href="a_time_called_you.html">A Time Called You (2023)</a></li>
+                                <li><a href="a_touch_on_your_cheek.html">A Touch On Your Cheek (2017)</a></li>
+                                <li><a href="a_twist_girl.html">A Twist Girl (2020)</a></li>
+                                <li><a href="a_virtuous_business.html">A Virtuous Business (2024)</a></li>
+                                <li><a href="a_wifes_credentials.html">A Wife's Credentials</a></li>
+                                <li><a href="a_word_from_warm_heart.html">A Word From Warm Heart</a></li>
+                                <li><a href="a_teen.html">A-TEEN</a></li>
+                                <li><a href="a_teen_2.html">A-TEEN 2</a></li>
+                                <li><a href="abiding_love_dandelion.html">Abiding Love Dandelion</a></li>
+                                <li><a href="about_time.html">About Time</a></li>
+                                <li><a href="about_youth.html">About Youth (2019)</a></li>
+                                <li><a href="absolute_boyfriend.html">Absolute Boyfriend (2019)</a></li>
+                                <li><a href="abyss.html">Abyss</a></li>
+                                <li><a href="acoustic.html">Acoustic</a></li>
+                                <li><a href="ad_genius_lee_tae_baek.html">Ad Genius Lee Tae Baek</a></li>
+                                <li><a href="adamas.html">Adamas (2022)</a></li>
+                                <li><a href="adult_kids.html">Adult Kids (2023)</a></li>
+                                <li><a href="adult_trainee.html">Adult Trainee (2021)</a></li>
+                                <li><a href="after_school_lucky_or_not.html">After School: Lucky or Not</a></li>
+                                <li><a href="after_the_rain.html">After The Rain</a></li>
+                                <li><a href="again_my_life.html">Again My Life (2022)</a></li>
+                                <li><a href="age_of_innocence.html">Age of Innocence</a></li>
+                                <li><a href="age_of_youth.html">Age of Youth</a></li>
+                                <li><a href="age_of_youth_2.html">Age of Youth 2</a></li>
+                                <li><a href="agency.html">Agency (2023)</a></li>
+                                <li><a href="ai_her.html">AI, Her</a></li>
+                                <li><a href="air_city.html">Air City</a></li>
+                                <li><a href="alchemy_of_souls.html">Alchemy of Souls (2022)</a></li>
+                                <li><a href="alchemy_of_souls_season_2.html">Alchemy of Souls Season 2: Light and Shadow (2022)</a></li>
+                                <li><a href="alice.html">Alice ( 2020)</a></li>
+                                <li><a href="alienoid_2.html">Alienoid 2 (2024)</a></li>
+                                <li><a href="all_about_eve.html">All About Eve</a></li>
+                                <li><a href="all_about_my_mom.html">All About My Mom</a></li>
+                                <li><a href="all_about_my_romance.html">All About My Romance</a></li>
+                                <li><a href="all_in.html">All In</a></li>
+                                <li><a href="all_of_us_are_dead.html">All of Us Are Dead (2022)</a></li>
+                                <li><a href="all_that_we_loved.html">All That We Loved (2023)</a></li>
+                                <li><a href="all_the_liquors.html">All the Liquors (2023)</a></li>
+                                <li><a href="alone_in_love.html">Alone In Love</a></li>
+                                <li><a href="am_i_the_only_one_with_butterflies.html">Am I The Only One With Butterflies? (2018)</a></li>
+                                <li><a href="amanza.html">Amanza (2020)</a></li>
+                                <li><a href="amor_fati.html">Amor Fati (2021)</a></li>
+                                <li><a href="angel_eyes.html">Angel Eyes</a></li>
+                                <li><a href="angel_eyes_special.html">Angel Eyes Special – Beginning of Love</a></li>
+                                <li><a href="angels_revenge.html">Angel’s Last Mission: Love</a></li>
+                                <li><a href="angry_mom.html">Angry Mom</a></li>
+                                <li><a href="anna.html">Anna (2022)</a></li>
+                                <li><a href="anna_extended_version.html">Anna: Extended Version (2022)</a></li>
+                                <li><a href="another_miss_oh.html">Another Miss Oh</a></li>
+                                <li><a href="apgujeong_midnight_sun.html">Apgujeong Midnight Sun</a></li>
+                                <li><a href="apple_of_my_eye.html">Apple of My Eye (2023)</a></li>
+                                <li><a href="arang_and_the_magistrate.html">Arang and the Magistrate</a></li>
+                                <li><a href="are_you_human_too.html">Are You Human Too?</a></li>
+                                <li><a href="are_you_still_dreaming.html">Are You Still Dreaming (1990)</a></li>
+                                <li><a href="argon.html">Argon (Korean Drama)</a></li>
+                                <li><a href="armored_saurus.html">Armored Saurus (2021)</a></li>
+                                <li><a href="armored_saurus_season_2.html">Armored Saurus Season 2 (2022)</a></li>
+                                <li><a href="arthdal_chronicles.html">Arthdal Chronicles</a></li>
+                                <li><a href="arthdal_chronicles_sword_of_aramun.html">Arthdal Chronicles: The Sword of Aramun (2023)</a></li>
+                                <li><a href="artificial_city.html">Artificial City (2021)</a></li>
+                                <li><a href="assorted_gems.html">Assorted Gems</a></li>
+                                <li><a href="at_a_distance_spring_is_green.html">At a Distance, Spring is Green (2021)</a></li>
+                                <li><a href="athena_goddess_of_war.html">Athena Goddess of War</a></li>
+                                <li><a href="attic_cat.html">Attic Cat</a></li>
+                                <li><a href="auction_house.html">Auction House</a></li>
+                                <li><a href="autumn_blossom.html">Autumn Blossom (2018)</a></li>
+                                <li><a href="autumn_tale.html">Autumn Tale</a></li>
+                                <li><a href="avengers_social_club.html">Avengers Social Club</a></li>
+                                <li><a href="awaken.html">Awaken (2020)</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </section>
+            </main>
+
+            </div>
+            <div class="pagination">
+                <a href="#" class="prev">« Previous</a>
+                <a href="index.html" class="page-number active ">1</a>
+                <a href="page-2.html" class="page-number ">2</a>
+                <a href="page-3.html" class="page-number">3</a>
+                <a href="page-4.html" class="page-number">4</a>
+                <a href="page-2.html" class="next">Next »</a>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; 2024 DramaFlix. All rights reserved.</p>
+    </footer>
+    <script>
+const navToggle = document.querySelector('.nav-toggle');
+const nav = document.querySelector('nav');
+
+navToggle.addEventListener('click', () => {
+    nav.classList.toggle('active');
+});
+
+// Search functionality
+function searchDramas() {
+    const input = document.getElementById('search-input');
+    const filter = input.value.toLowerCase();
+    const dramaList = document.querySelectorAll('.movie-list ul'); // Select all drama lists
+    let hasResults = false; // Flag to check if there are any results
+
+    dramaList.forEach(list => {
+        const dramaItems = list.querySelectorAll('li'); // Select all drama items in the current list
+        let listHasResults = false; // Flag for the current list
+
+        dramaItems.forEach(item => {
+            const title = item.textContent.toLowerCase();
+            if (title.includes(filter)) {
+                item.style.display = ""; // Show the item
+                listHasResults = true; // Set flag to true if there's a match
+            } else {
+                item.style.display = "none"; // Hide the item
+            }
+        });
+
+        // If the current list has results, show the list
+        if (listHasResults) {
+            list.style.display = ""; // Show the list
+            hasResults = true; // Set overall flag to true
+        } else {
+            list.style.display = "none"; // Hide the list if no items match
+        }
+    });
+
+    // Scroll to the drama list section if there are results
+    if (hasResults) {
+        document.querySelector('.movie-list').scrollIntoView({ behavior: 'smooth' });
+    }
+}
+
+// Attach the search function to the button click
+document.getElementById('search-button').addEventListener('click', searchDramas);
+    </script>
+    <script src="script.js"></script>
+</body>
+</html>

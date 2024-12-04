@@ -91,7 +91,7 @@ header nav ul li a:hover {
     background-color: #0056b3; /* Darker blue on hover */
 }
 .hero {
-    background-image: url('hero-2.jpg'); /* Replace with your image path */
+    background-image: url('assets/hero-2.jpg'); /* Replace with your image path */
     background-size: cover;
     background-position: center;
     height: 88vh; /* Adjust height as needed */
@@ -132,7 +132,7 @@ header nav ul li a:hover {
 .cta-button {
     background-color: #ffffff; /* Button background color */
     color: #000000; /* Button text color */
-    padding: 5px 10px;
+    padding: 10px 20px;
     text-decoration: none;
     border-radius: 5px;
     font-weight: bold;
@@ -256,236 +256,161 @@ footer {
     background: #000000;
     color: #ffffff;
 }
-.movie-details {
-    display: flex;
-    padding: 20px;
-    background-color: #f9f9f9;
-}
 
-.movie-poster img {
-    width: 300px; /* Adjust size as needed */
-    height: auto;
-    border-radius: 8px;
-    margin-right: 20px;
-}
-
-.movie-info {
-    max-width: 600px;
-}
-
-.movie-info h1 {
-    font-size: 28px;
-    margin-bottom: 10px;
-}
-
-.movie-info p {
-    margin: 5px 0;
-}
-
-.reviews {
-    margin-top: 30px;
-}
-
-.review {
-    background-color: #fff;
-    border: 1px solid #ddd;
-    border-radius: 5px;
-    padding: 10px;
-    margin-bottom: 10px;
-}
-
-.cta-button {
-    background-color: #ff6347;
-}
-
-
-/* IMDb Icon Styling */
-.imdb-rating {
-    display: flex;
-    align-items: center;
-    margin: 15px 0;
-    font-size: 1.2rem;
-    font-weight: bold;
-}
-
-.imdb-rating .fa-imdb {
-    color: #f5c518;
-    font-size: 1.5rem;
-    margin-right: 10px;
-}
-
-/* Video Player Styles */
-.video-player {
-    margin: 20px;
-    padding: 20px;
-    background: #fff;
-    border-radius: 8px;
-}
-
-.video-player video {
-    width: 100%;
-    border-radius: 8px;
-}
-
-/* Episodes Section Styles */
-.episodes {
-    margin: 20px;
-    padding: 20px;
-    background: #3c3c3c;
-    border-radius: 8px;
-}
-
-.episodes h2 {
-    font-size: 30px;
-    margin-bottom: 10px;
-    color: black;
-}
-
-.episodes ul {
-    list-style: none;
-    padding: 0;
-}
-
-.episodes ul li {
-    margin: 5px 0;
-}
-
-.episodes ul li a {
-    text-decoration: none;
-    color: #ffffff;
-    transition: color 0.3s;
-}
-
-.episodes ul li a:hover {
-    color: rgb(60, 60, 236);
-}
-.container {
-    max-width: 800px;
-    margin: 0 auto;
-    padding: 20px;
-    background: #fff;
-    border: 1px solid #ddd;
-    border-radius: 8px;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-}
-
-h1 {
-    font-size: 24px;
-    color: #000000;
-    text-align: center;
-    margin-bottom: 20px;
-}
-.comments-section {
-    margin-top: 20px;
-}
-
-.comments-section h2 {
-    font-size: 20px;
-    margin-bottom: 10px;
-}
-
-.comments-section p {
-    font-size: 14px;
-    margin-bottom: 20px;
-}
-
-.required {
-    color: red;
-}
-
-form label {
-    display: block;
-    margin-bottom: 5px;
-    font-weight: bold;
-}
-
-form input,
-form textarea {
-    width: 100%;
-    padding: 10px;
-    margin-bottom: 15px;
-    border: 1px solid #ddd;
-    border-radius: 4px;
-    font-size: 14px;
-}
-
-form input:focus,
-form textarea:focus {
-    border-color: #ff4d88;
-    outline: none;
-}
-
-.submit-btn {
-    background-color: #000000;
-    color: #fff;
-    border: none;
-    border-radius: 4px;
-    padding: 10px 15px;
-    font-size: 16px;
-    cursor: pointer;
-    transition: 0.3s ease;
-}
-
-.submit-btn:hover {
-    background-color: #e6396d;
-}
 
 /* Media Queries */
 @media (max-width: 768px) {
-    .movie-details {
-        flex-direction: column;
-        align-items: center;
+    header {
+        text-align: center;
     }
 
-    .movie-poster img {
-        max-width: 100%;
+    nav ul {
+        display: block;
+        margin: 0;
+        padding: 0;
     }
 
     nav ul li {
         display: block;
         margin: 10px 0;
     }
-}
 
-@media (max-width: 480px) {
-    .logo {
-        font-size: 20px;
-    }
-
-    .movie-info h1 {
+    .hero h1 {
         font-size: 24px;
     }
 
+    .hero p {
+        font-size: 18px;
+    }
+
     .cta-button {
-        width: 100%;
-        text-align: center;
+        padding: 8px 16px;
     }
 }
-.episodes ul {
-    list-style-type: none;
-    padding: 0;
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: center;
-}
 
-.episode-button {
-    display: inline-block;
-    background-color: #000000; /* Bootstrap primary color */
+@media (max-width: 480px) {
+    .hero {
+        padding: 30px 10px;
+    }
+
+    .hero h1 {
+        font-size: 20px;
+    }
+
+    .hero p {
+        font-size: 16px;
+    }
+
+    .drama-grid {
+        grid-template-columns: 1fr; /* Single column layout */
+    }
+
+    .pagination a {
+        font-size: 14px;
+    }
+}
+/* Existing styles... */
+
+/* Add styles for the nav toggle button */
+.nav-toggle {
+    display: none; /* Hide by default */
+    font-size: 24px;
+    background: none;
+    border: none;
     color: white;
-    padding: 10px 15px;
-    margin: 5px;
+    cursor: pointer;
+}
+.nav-toggle {
+    display: none; /* Hide the label by default */
+}
+/* Media Queries */
+@media (max-width: 768px) {
+    nav ul {
+        display: none; /* Hide the navigation links by default */
+        flex-direction: column; /* Stack links vertically */
+        width: 100%; /* Full width */
+        background: #333; /* Match header background */
+        position: absolute; /* Positioning */
+        top: 60px; /* Adjust based on header height */
+        left: 0;
+    }
+
+    /* Show navigation links when checkbox is checked */
+    .nav-toggle-checkbox:checked + .nav-toggle + nav ul {
+        display: flex; /* Show links when nav is active */
+    }
+
+    .nav-toggle {
+        display: block; /* Show the toggle button */
+        font-size: 24px;
+        cursor: pointer;
+    }
+}
+
+@media (max-width: 480px) {
+    /* Further adjustments for smaller screens if necessary */
+}
+
+
+
+
+
+.alphabetical-navigation {
+    padding: 20px;
+    background: #f9f9f9;
+    border-bottom: 1px solid #ddd;
+}
+
+.alphabetical-navigation .tabs {
+    display: flex;
+    gap: 10px;
+    margin-bottom: 10px;
+}
+
+.alphabetical-navigation .tabs .tab {
+    background: #e0e0e0;
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+    font-size: 14px;
+}
+
+.alphabetical-navigation .alphabet a {
+    margin: 0 5px;
     text-decoration: none;
-    border-radius: 5px;
-    transition: background-color 0.3s, transform 0.3s;
+    color: #333;
+    font-size: 14px;
 }
 
-.episode-button i {
-    margin-right: 5px; /* Space between icon and text */
+.movie-list {
+    padding: 20px;
 }
 
-.episode-button:hover {
-    background-color: white; /* Darker shade for hover */
-    transform: translateY(-2px); /* Slight lift effect */
+.movie-list h2 {
+    margin-bottom: 20px;
+}
+
+.movies div {
+    margin-bottom: 20px;
+}
+
+.movies h3 {
+    font-size: 18px;
+    margin-bottom: 10px;
+}
+
+.movies ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.movies ul li {
+    margin-bottom: 5px;
+}
+.movies ul li a{
+    margin-bottom: 5px;
+    text-decoration: none;
+    color: black;
+    
 }
